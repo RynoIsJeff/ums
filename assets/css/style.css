@@ -36,13 +36,14 @@
   --white-2: hsl(0, 14%, 98%);
   --black: hsl(0, 0%, 0%);
 
-  
-
+  --turquoise: #00F3F7;
+  --cyan: #003B46;
+  --blue: #006185;
   /**
    * gradient color
    */
 
-  --gradient: linear-gradient(to left top, var(--persian-rose), var(--safety-orange));
+  --gradient: linear-gradient(to left top, var(--blue), var(--cyan));
 
   /**
    * typography
@@ -209,7 +210,7 @@ body {
 .h1,
 .h2,
 .h3 {
-  color: var(--eerie-black);
+  color: var(--turquoise);
   font-family: var(--ff-league-spartan);
   line-height: 1.2;
 }
@@ -256,9 +257,9 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--white-1);
+  background-color: var(--black);
   padding-block: 15px;
-  border-block-end: 1px solid var(--cultured);
+  border-block-end: 2px solid var(--blue);
   z-index: 4;
   transition: var(--transition-1);
 }
@@ -272,11 +273,22 @@ body {
 }
 
 .logo {
+  display: inline-block;
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+.logo img {
+  max-height: 40px; /* Adjust the maximum height to control the size of the logo */
+  width: auto;
+}
+
+.site-title {
   font-family: var(--ff-league-spartan);
-  color: var(--black);
+  color: var(--turquoise);
   font-size: 3.5rem;
   font-weight: var(--fw-700);
   line-height: 1;
+  display: inline-block;
 }
 
 .nav-toggle-btn { font-size: 40px; }
@@ -319,7 +331,7 @@ body {
 .navbar.active .navbar-list { opacity: 1; }
 
 .navbar-link {
-  color: var(--eerie-black);
+  color: var(--turquoise);
   font-family: var(--ff-league-spartan);
   font-size: var(--fs-4);
   line-height: 1.2;
@@ -327,9 +339,19 @@ body {
   transition: var(--transition-1);
 }
 
-.navbar-link:is(:hover, :focus) { color: var(--red-crayola); }
+.navbar-link:hover,
+.navbar-link:focus {
+  color: white; /* Change to the desired color on hover or focus */
+}
 
-.header .btn { margin-block-start: 10px; }
+header .navbar-link:hover,
+header .navbar-link:focus {
+  color: white; /* Change to the desired color on hover or focus */
+}
+
+.header .btn {
+  margin-block-start: 10px;
+}
 
 
 
@@ -347,7 +369,7 @@ body {
 .hero-content { margin-block-end: 30px; }
 
 .hero-subtitle {
-  color: var(--eerie-black);
+  color: var(--blue);
   font-size: var(--fs-5);
   font-weight: var(--fw-500);
 }
@@ -661,14 +683,26 @@ textarea.input-field {
 
 .contact-item { min-width: 100%; }
 
+.card-container {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between; /* Adjust as needed */
+}
+
 .contact-card {
+  flex: 0 0 30%; /* Adjust the width as needed */
   background-color: var(--white-1);
   padding: 20px;
   border-radius: var(--radius-2);
   box-shadow: var(--shadow-1);
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  gap: 15px;
+  transition: var(--transition-1);
+}
+
+.contact-card:hover, .contact-card:focus {
+  box-shadow: var(--shadow-2); /* Adjust shadow on hover/focus as needed */
 }
 
 .contact-card .card-icon {
@@ -677,22 +711,30 @@ textarea.input-field {
   font-size: 25px;
   padding: 13px;
   border-radius: 50%;
-  transition: var(--transition-1);
 }
 
-.contact-card:is(:hover, :focus) .card-icon {
+.contact-card:hover .card-icon,
+.contact-card:focus .card-icon {
   background-color: var(--red-crayola);
   color: var(--white-1);
 }
 
-.contact-card .card-title { margin-block-end: 5px; }
+.contact-card .card-title {
+  margin-block-end: 5px;
+}
 
-.contact-card :is(.card-link, .card-address) {
+.contact-card .card-link,
+.contact-card .card-address {
   font-size: var(--fs-6);
   transition: var(--transition-1);
 }
 
-.contact-card .card-link:is(:hover, :focus) { color: var(--red-crayola); }
+.contact-card .card-link:hover,
+.contact-card .card-link:focus,
+.contact-card .card-address:hover,
+.contact-card .card-address:focus {
+  color: var(--red-crayola);
+}
 
 
 
@@ -859,6 +901,7 @@ textarea.input-field {
   .hero-text {
     max-width: 60ch;
     margin-inline: auto;
+    color: var(--black);
   }
 
 
