@@ -12,25 +12,18 @@
    * colors
    */
 
-  --safety-orange: hsl(25, 100%, 50%);
-  --lavender-gray: hsl(230, 19%, 81%);
-  --persian-rose: hsl(328, 100%, 59%);
-  --red-crayola: hsl(341, 100%, 49%);
-  --eerie-black: hsl(240, 6%, 10%);
-  --light-gray: hsl(0, 0%, 80%);
   --cultured-2: hsl(210, 60%, 98%);
   --platinum: hsl(0, 0%, 90%);
-  --gray-web: hsl(220, 5%, 49%);
   --cultured: hsl(0, 0%, 93%);
   --black_10: hsla(0, 0%, 0%, 0.1);
   --black_5: hsla(0, 0%, 0%, 0.05);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 14%, 98%);
   --black: hsl(0, 0%, 0%);
-
   --turquoise: #00F3F7;
   --cyan: #003B46;
   --blue: #006185;
+
   /**
    * gradient color
    */
@@ -246,7 +239,7 @@ body {
 
 /* Add a margin-top to the hero section to accommodate the header */
 #home {
-  margin-top: 80px; /* Adjust the margin as needed to provide space for the header */
+  margin-top: 100px; /* Adjust the margin as needed to provide space for the header */
 }
 
 /* Adjust the header styles */
@@ -258,11 +251,13 @@ body {
   background-color: var(--black);
   padding-block: 15px;
   border-block-end: 2px solid var(--turquoise);
-  z-index: 4;
+  z-index: 1000; /* Set a higher z-index than other elements */
   transition: var(--transition-1);
 }
 
-.header.active { filter: drop-shadow(var(--shadow-2)); }
+.header.active {
+  filter: drop-shadow(var(--shadow-2));
+}
 
 .header > .container {
   display: flex;
@@ -690,6 +685,8 @@ textarea.input-field {
 .contact-card .card-link:hover,
 .contact-card .card-link:focus,
 .contact-card .card-address:hover,
+.contact-card .card-phone:hover,
+.contact-card .card-mail:hover,
 .contact-card .card-address:focus {
   color: var(--turquoise);
 }
@@ -772,10 +769,6 @@ textarea.input-field {
     column-gap: 25px;
   }
 
-
-
-  
-
   /**
    * CONTACT
    */
@@ -788,10 +781,6 @@ textarea.input-field {
   .contact-item { min-width: calc(50% - 18px); }
 
 }
-
-
-
-
 
 /**
  * responsive for larger than 768px screen
@@ -818,8 +807,6 @@ textarea.input-field {
 
   }
 
-
-
   /**
    * REUSED STYLE
    */
@@ -831,8 +818,6 @@ textarea.input-field {
     margin-inline: auto;
   }
 
-
-
   /**
    * HERO
    */
@@ -840,10 +825,8 @@ textarea.input-field {
   .hero-text {
     max-width: 60ch;
     margin-inline: auto;
-    color: var(--white-2);
+    color: var(--white-1);
   }
-
-
 
   /**
    * ABOUT
@@ -856,8 +839,6 @@ textarea.input-field {
     margin-inline: 0;
   }
 
-
-
   /**
    * CONTACT
    */
@@ -867,10 +848,6 @@ textarea.input-field {
   .contact-item { min-width: calc(50% - 12.5px); }
 
 }
-
-
-
-
 
 /**
  * responsive for larger than 992px screen
@@ -900,8 +877,6 @@ textarea.input-field {
 
   }
 
-
-
   /**
    * REUSED STYLE
    */
@@ -909,8 +884,6 @@ textarea.input-field {
   .container { max-width: 960px; }
 
   .grid-list { grid-template-columns: repeat(3, 1fr); }
-
-
 
   /**
    * HEADER
@@ -949,8 +922,6 @@ textarea.input-field {
 
   .header .btn { margin-block-start: 0; }
 
-
-
   /**
    * HERO
    */
@@ -984,8 +955,6 @@ textarea.input-field {
   .hero-text,
   .hero .btn { margin-inline: 0; }
 
-
-
   /**
    * SERVICE
    */
@@ -993,10 +962,6 @@ textarea.input-field {
   .service-card { padding: 20px; }
 
   .service-card .h3 { --fs-3: 2.3rem; }
-
-
-
-
 
   /**
    * ABOUT
@@ -1011,10 +976,6 @@ textarea.input-field {
 
   .about-banner { margin-block-end: 0; }
 
-
-
-
-
   /**
    * CONTACT
    */
@@ -1028,10 +989,6 @@ textarea.input-field {
   .contact-card .card-icon { font-size: 32px; }
 
 }
-
-
-
-
 
 /**
  * responsive for larger than 1200px screen
@@ -1057,8 +1014,6 @@ textarea.input-field {
 
   }
 
-
-
   /**
    * REUSED STYLE
    */
@@ -1067,8 +1022,6 @@ textarea.input-field {
 
   .btn { --fs-6: 1.5rem; }
 
-
-
   /**
    * SERVICE
    */
@@ -1076,10 +1029,6 @@ textarea.input-field {
   .service-card { padding: 30px; }
 
   .service-card .h3 { --fs-3: 2.5rem; }
-
-
-
-
 
   /**
    * ABOUT
@@ -1091,17 +1040,11 @@ textarea.input-field {
 
   .about-item ion-icon { font-size: 20px; }
 
-
-
   /**
    * CTA
    */
 
   .cta .section-title { margin-block: 15px 24px; }
-
-
-
-
 
   /**
    * CONTACT
