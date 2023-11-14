@@ -291,13 +291,25 @@ body {
   display: inline-block;
 }
 
-.nav-toggle-btn { font-size: 40px; }
+.nav-toggle-btn {
+  font-size: 40px;
+  color: var(--turquoise);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
-.nav-toggle-btn.active .open,
-.nav-toggle-btn .close { display: none; }
+.nav-toggle-btn .close {
+  display: none;
+}
 
-.nav-toggle-btn .open,
-.nav-toggle-btn.active .close { display: block; }
+.nav-toggle-btn.active .open {
+  display: none;
+}
+
+.nav-toggle-btn.active .close {
+  display: block;
+}
 
 .navbar {
   background-color: var(--white-1);
