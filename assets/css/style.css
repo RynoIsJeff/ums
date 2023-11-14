@@ -58,7 +58,7 @@
    * spacing
    */
 
-  --section-padding: 60px;
+  --section-padding: 10px;
 
   /**
    * shadow
@@ -244,6 +244,12 @@ body {
   #HEADER
 \*-----------------------------------*/
 
+/* Add a margin-top to the hero section to accommodate the header */
+#home {
+  margin-top: 80px; /* Adjust the margin as needed to provide space for the header */
+}
+
+/* Adjust the header styles */
 .header {
   position: fixed;
   top: 0;
@@ -262,6 +268,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative; /* Add position relative to the container */
+  z-index: 1; /* Set a higher z-index than the hero section */
 }
 
 .logo {
@@ -526,6 +534,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   z-index: 1;
+  padding: 100px;
 }
 
 .cta::after {
@@ -887,7 +896,7 @@ textarea.input-field {
      * spacing
      */
 
-    --section-padding: 100px;
+    --section-padding: 10px;
 
   }
 
