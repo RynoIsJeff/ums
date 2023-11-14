@@ -35,7 +35,7 @@
    * gradient color
    */
 
-  --gradient: linear-gradient(to left top, var(--turquoise), var(--blue));
+  --gradient: linear-gradient(to left top, var(--turquoise), var(--cyan));
 
   /**
    * typography
@@ -270,7 +270,7 @@ body {
 }
 
 .logo img {
-  max-height: 40px; /* Adjust the maximum height to control the size of the logo */
+  max-height: 60px; /* Adjust the maximum height to control the size of the logo */
   width: auto;
 }
 
@@ -355,6 +355,33 @@ body {
 
 .header .btn {
   margin-block-start: 10px;
+}
+
+/* Add a media query for screens with a maximum width of 767px (typical for mobile devices) */
+@media screen and (max-width: 767px) {
+  .header {
+    padding-block: 10px; /* Reduce the top and bottom padding for smaller screens */
+  }
+
+  .site-title {
+    font-size: 2rem; /* Reduce the font size for smaller screens */
+  }
+
+  .navbar {
+    padding-block: 10px; /* Adjust the padding for the navbar on smaller screens */
+  }
+
+  .navbar-list {
+    padding: 10px 15px; /* Adjust the padding for the list items on smaller screens */
+  }
+
+  .navbar-link {
+    padding-block: 5px; /* Adjust the vertical padding for the navbar links on smaller screens */
+  }
+  
+  .navbar.active {
+    max-height: none; /* Ensure the navbar is fully visible on smaller screens */
+  }
 }
 
 
@@ -894,7 +921,7 @@ textarea.input-field {
 
   .navbar-link { position: relative; }
 
-  .navbar-link:is(:hover, :focus) { color: var(--eerie-black); }
+  .navbar-link:is(:hover, :focus) { color: var(--white-1); }
 
   .navbar-link::after {
     content: "";
@@ -932,7 +959,7 @@ textarea.input-field {
   .hero-subtitle {
     position: relative;
     padding-inline-start: 15px;
-    color: turquoise;
+    color: var(--turquoise);
   }
 
   .hero-subtitle::before {
