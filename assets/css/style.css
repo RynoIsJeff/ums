@@ -43,7 +43,7 @@
    * gradient color
    */
 
-  --gradient: linear-gradient(to left top, var(--blue), var(--cyan));
+  --gradient: linear-gradient(to left top, var(--turquoise), var(--blue));
 
   /**
    * typography
@@ -197,11 +197,11 @@ body {
 
 .btn-secondary {
   background-color: var(--white-1);
-  color: var(--eerie-black);
+  color: var(--black);
 }
 
 .btn-secondary:is(:hover, :focus) {
-  background-color: var(--eerie-black);
+  background-color: var(--turquoise);
   color: var(--white-1);
 }
 
@@ -259,7 +259,7 @@ body {
   width: 100%;
   background-color: var(--black);
   padding-block: 15px;
-  border-block-end: 2px solid var(--blue);
+  border-block-end: 2px solid var(--turquoise);
   z-index: 4;
   transition: var(--transition-1);
 }
