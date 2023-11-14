@@ -410,26 +410,27 @@ body {
   transform: translateY(-10px);
 }
 
-.service-card .card-title { margin-block: 0; color: var(--blue); }
+.service-card .card-title { margin-block: 20px 8px; color: var(--blue); }
 
 .service-card .card-text { font-size: var(--fs-6); color: var(--black); }
 
 .service-card .card-icon {
-  color: var(--white-1);
-  font-size: 25px;
-  max-width: max-content;
-  margin-inline: auto;
-  padding: 18px;
+  width: 70px; /* Adjust the width as needed */
+  height: 70px; /* Adjust the height as needed */
   border-radius: 50%;
-  background-color: var(--blue); /* Set the background color for the icons */
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 15px; /* Adjust the margin as needed */
+  margin: 0 auto 15px; /* Adjust the margin as needed */
+}
+
+.service-card .card-icon img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .service-card .card-icon ion-icon {
-  color: var(--white-1);
+  display: none; /* Hide the ion-icon element */
 }
 
 
