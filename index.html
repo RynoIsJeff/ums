@@ -31,29 +31,30 @@
     -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-    const navToggleButton = document.querySelector('.nav-toggle-btn');
+            const navToggleButton = document.querySelector('.nav-toggle-btn');
 
-    navToggleButton.addEventListener('click', function () {
-        this.classList.toggle('active');
-    });
-});
-document.addEventListener('DOMContentLoaded', function () {
-    const navToggleButton = document.querySelector('.nav-toggle-btn');
-    const navbar = document.querySelector('.navbar');
+            navToggleButton.addEventListener('click', function () {
+            this.classList.toggle('active');
+            });
+        });
+        
+        document.addEventListener('DOMContentLoaded', function () {
+            const navToggleButton = document.querySelector('.nav-toggle-btn');
+            const navbar = document.querySelector('.navbar');
 
-    navToggleButton.addEventListener('click', function () {
-        this.classList.toggle('active');
-        navbar.classList.toggle('active');
-    });
+            navToggleButton.addEventListener('click', function () {
+            this.classList.toggle('active');
+            navbar.classList.toggle('active');
+            });
 
-    // Close the dropdown if the user clicks outside of it
-    window.addEventListener('click', function (event) {
-        if (!event.target.matches('.nav-toggle-btn') && !event.target.closest('.navbar')) {
-            navToggleButton.classList.remove('active');
-            navbar.classList.remove('active');
-        }
-    });
-});
+            // Close the dropdown if the user clicks outside of it
+            window.addEventListener('click', function (event) {
+                if (!event.target.matches('.nav-toggle-btn') && !event.target.closest('.navbar')) {
+                    navToggleButton.classList.remove('active');
+                    navbar.classList.remove('active');
+                }
+            });
+        });
 
     </script>
 
@@ -169,300 +170,272 @@ document.addEventListener('DOMContentLoaded', function () {
           <ul class="grid-list">
 
             <li>
-              <div class="service-card">
+                <a href="#" class="service-card-link">
+                    <div class="service-card">
+                        <div class="card-icon" style="background-color: #00F3F7">
+                            <ion-icon name="chatbox"></ion-icon>
+                        </div>
+                        <h3 class="h3">
+                            <span class="card-title">Analytics, Performance Tracking, and Reporting</span>
+                        </h3>
+                        <p class="card-text">
+                            Unlock actionable insights with our Analytics, Performance Tracking, and Reporting services, empowering your 
+                            business with data-driven decisions for sustained growth and success.
+                        </p>
+                    </div>
+                </a>
+            </li>            
 
-                <div class="card-icon" style="background-color: #13c4a1">
-                  <ion-icon name="chatbox"></ion-icon>
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Analytics, Performance Tracking, and Reporting</a>
-                </h3>
-
-                <p class="card-text">
-                    Unlock actionable insights with our Analytics, Performance Tracking, and Reporting services, empowering your 
-                    business with data-driven decisions for sustained growth and success.
-                </p>
-
-              </div>
+            <li>
+                <a href="#" class="service-card-link">
+                    <div class="service-card">
+                        <div class="card-icon" style="background-color: #00F3F7">
+                            <ion-icon name="desktop"></ion-icon>
+                        </div>
+                        <h3 class="h3">
+                            <span class="card-title">Branding and Brand Strategy Development</span>
+                        </h3>
+                        <p class="card-text">
+                            Elevate your brand presence with our comprehensive Branding and Brand Strategy Development services. 
+                            From crafting compelling narratives to strategic positioning, 
+                            we bring your brand identity to life for lasting impact in the market.
+                        </p>
+                    </div>
+                </a>
             </li>
 
             <li>
-              <div class="service-card">
-
-                <div class="card-icon" style="background-color: #6610f2">
-                  <ion-icon name="desktop"></ion-icon>
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Branding and Brand Strategy Development</a>
-                </h3>
-
-                <p class="card-text">
-                    Elevate your brand presence with our comprehensive Branding and Brand Strategy Development services. 
-                    From crafting compelling narratives to strategic positioning, 
-                    we bring your brand identity to life for lasting impact in the market.
-                </p>
-
-              </div>
+                <a href="#" class="service-card-link">
+                    <div class="service-card">
+                        <div class="card-icon" style="background-color: #00F3F7">
+                            <ion-icon name="bulb"></ion-icon>
+                        </div>
+                        <h3 class="h3">
+                            <span class="card-title">Content Marketing and Creation</span>
+                        </h3>
+                        <p class="card-text">
+                            Transform your brand narrative with our Content Marketing and Creation services. 
+                            From engaging storytelling to visually compelling content, 
+                            we craft strategies that captivate your audience and drive meaningful connections for sustained success.
+                        </p>
+                    </div>
+                </a>
             </li>
 
             <li>
-              <div class="service-card">
-
-                <div class="card-icon" style="background-color: #ffb700">
-                  <ion-icon name="bulb"></ion-icon>
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Content Marketing and Creation</a>
-                </h3>
-
-                <p class="card-text">
-                    Transform your brand narrative with our Content Marketing and Creation services. 
-                    From engaging storytelling to visually compelling content, 
-                    we craft strategies that captivate your audience and drive meaningful connections for sustained success.
-                </p>
-
-              </div>
+                <a href="#" class="service-card-link">
+                    <div class="service-card">
+                        <div class="card-icon" style="background-color: #00F3F7">
+                            <ion-icon name="phone-portrait"></ion-icon>
+                        </div>
+                        <h3 class="h3">
+                            <span class="card-title">Digital Marketing and Advertising Strategy Development</span>
+                        </h3>
+                        <p class="card-text">
+                            Revitalize your digital presence with our Digital Marketing and Advertising Strategy Development services. 
+                            We tailor strategies that leverage the latest trends, 
+                            ensuring your brand stands out in the online landscape and drives impactful results.
+                        </p>
+                    </div>
+                </a>
             </li>
 
             <li>
-              <div class="service-card">
-
-                <div class="card-icon" style="background-color: #fc3549">
-                  <ion-icon name="phone-portrait"></ion-icon>
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Digital Marketing and Advertising Strategy Development</a>
-                </h3>
-
-                <p class="card-text">
-                    Revitalize your digital presence with our Digital Marketing and Advertising Strategy Development services. 
-                    We tailor strategies that leverage the latest trends, 
-                    ensuring your brand stands out in the online landscape and drives impactful results.
-                </p>
-
-              </div>
+                <a href="#" class="service-card-link">
+                    <div class="service-card">
+                        <div class="card-icon" style="background-color: #00F3F7">
+                            <ion-icon name="archive"></ion-icon>
+                        </div>
+                        <h3 class="h3">
+                            <span class="card-title">Email Marketing and Automation</span>
+                        </h3>
+                        <p class="card-text">
+                            Optimize your communication channels with our Email Marketing and Automation services. 
+                            From personalized campaigns to streamlined automation, we ensure your messages resonate, engage, and convert, 
+                            fostering meaningful connections with your audience.
+                        </p>
+                    </div>
+                </a>
             </li>
 
             <li>
-              <div class="service-card">
-
-                <div class="card-icon" style="background-color: #00d280">
-                  <ion-icon name="archive"></ion-icon>
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Email Marketing and Automation</a>
-                </h3>
-
-                <p class="card-text">
-                    Optimize your communication channels with our Email Marketing and Automation services. 
-                    From personalized campaigns to streamlined automation, we ensure your messages resonate, engage, and convert, 
-                    fostering meaningful connections with your audience.
-                </p>
-
-              </div>
+                <a href="#" class="service-card-link">
+                    <div class="service-card">
+                        <div class="card-icon" style="background-color: #00F3F7">
+                            <ion-icon name="build"></ion-icon>
+                        </div>
+                        <h3 class="h3">
+                            <span class="card-title">Event Marketing and Management</span>
+                        </h3>
+                        <p class="card-text">
+                            Transform your events into unforgettable experiences with our Event Marketing and Management services. 
+                            From strategic planning to flawless execution, we ensure every detail is curated to leave a lasting impression, 
+                            making your events a resounding success.
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="service-card-link">
+                    <div class="service-card">
+                        <div class="card-icon" style="background-color: #00F3F7">
+                            <ion-icon name="chatbox"></ion-icon>
+                        </div>
+                        <h3 class="h3">
+                            <span class="card-title">Influencer Marketing and Management</span>
+                        </h3>
+                        <p class="card-text">
+                            Elevate your brand's influence with our Influencer Marketing and Management services. 
+                            From identifying the perfect influencers to crafting impactful collaborations, 
+                            we amplify your brand's reach and credibility in the digital landscape.
+                        </p>
+                    </div>
+                </a>
+            </li>
+  
+            <li>
+                <a href="#" class="service-card-link">    
+                    <div class="service-card">
+                        <div class="card-icon" style="background-color: #00F3F7">
+                            <ion-icon name="desktop"></ion-icon>
+                        </div>
+                        <h3 class="h3">
+                            <span class="card-title">Market Research and Consumer Insights</span>
+                        </h3>
+                        <p class="card-text">
+                            Navigate market dynamics with precision through our Market Research and Consumer Insights services. 
+                            We uncover valuable data, providing you with strategic insights to make informed decisions and stay ahead 
+                            in an ever-evolving business landscape.
+                        </p>
+                    </div>
+                </a>
+            </li>
+  
+            <li>
+                <a href="#" class="service-card-link">
+                    <div class="service-card">
+                        <div class="card-icon" style="background-color: #00F3F7">
+                            <ion-icon name="bulb"></ion-icon>
+                        </div>
+                        <h3 class="h3">
+                            <span class="card-title">Marketing Automation and Lead Generation</span>
+                        </h3>
+                        <p class="card-text">
+                            Empower your marketing efforts with our Marketing Automation and Lead Generation services. 
+                            Streamline workflows, nurture prospects, 
+                            and drive conversions as we implement cutting-edge automation strategies tailored to fuel your business growth.
+                        </p>
+                    </div>
+                </a>
+            </li>
+  
+            <li>
+                <a href="#" class="service-card-link">
+                    <div class="service-card">
+                        <div class="card-icon" style="background-color: #00F3F7">
+                            <ion-icon name="phone-portrait"></ion-icon>
+                        </div>
+                        <h3 class="h3">
+                            <span class="card-title">Pay-Per-Click (PPC) Advertising Campaigns</span>
+                        </h3>
+                        <p class="card-text">
+                            Maximize your online visibility and drive targeted traffic with our Pay-Per-Click (PPC) 
+                            Advertising Campaign services. From strategic keyword selection to compelling ad creatives, 
+                            we optimize every element to ensure your campaigns yield optimal results.
+                        </p>
+                    </div>
+                </a>
+            </li>
+  
+            <li>
+                <a href="#" class="service-card-link">
+                    <div class="service-card">
+                        <div class="card-icon" style="background-color: #00F3F7">
+                            <ion-icon name="archive"></ion-icon>
+                        </div>
+                        <h3 class="h3">
+                            <span class="card-title">Public Relations and Media Outreach</span>
+                        </h3>
+                        <p class="card-text">
+                            Shape a compelling narrative and build a positive brand image with our Public Relations and 
+                            Media Outreach services. From strategic messaging to media relations, 
+                            we help you create impactful stories that resonate with your audience and enhance your brand reputation.
+                        </p>
+                    </div>
+                </a>
+            </li>
+  
+            <li>
+                <a href="#" class="service-card-link">
+                    <div class="service-card">
+                        <div class="card-icon" style="background-color: #00F3F7">
+                            <ion-icon name="build"></ion-icon>
+                        </div>
+                        <h3 class="h3">
+                            <span class="card-title">Search Engine Optimization (SEO) and Search Engine Marketing (SEM)</span>
+                        </h3>
+                        <p class="card-text">
+                            Boost your online visibility and drive targeted traffic with our Search Engine Optimization (SEO) 
+                            and Search Engine Marketing (SEM) services. We employ strategic optimization techniques and 
+                            data-driven marketing strategies to ensure your brand stands out in the competitive digital landscape.
+                        </p>
+                    </div>
+                </a>
             </li>
 
             <li>
-              <div class="service-card">
-
-                <div class="card-icon" style="background-color: #ff612f">
-                  <ion-icon name="build"></ion-icon>
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Event Marketing and Management</a>
-                </h3>
-
-                <p class="card-text">
-                    Transform your events into unforgettable experiences with our Event Marketing and Management services. 
-                    From strategic planning to flawless execution, we ensure every detail is curated to leave a lasting impression, 
-                    making your events a resounding success.
-                </p>
-
-              </div>
+                <a href="#" class="service-card-link">
+                    <div class="service-card">
+                        <div class="card-icon" style="background-color: #00F3F7">
+                            <ion-icon name="chatbox"></ion-icon>
+                        </div>
+                        <h3 class="h3">
+                            <span class="card-title">Social Media Marketing and Management</span>
+                        </h3>
+                        <p class="card-text">
+                            Fuel your brand's social presence with our Social Media Marketing and Management services. 
+                            From engaging content creation to strategic campaign management, we ensure your brand captivates audiences 
+                            across diverse social platforms, fostering meaningful connections and driving business growth.
+                        </p>
+                    </div>
+                </a>
             </li>
+  
             <li>
-                <div class="service-card">
-  
-                  <div class="card-icon" style="background-color: #13c4a1">
-                    <ion-icon name="chatbox"></ion-icon>
-                  </div>
-  
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Influencer Marketing and Management</a>
-                  </h3>
-  
-                  <p class="card-text">
-                    Elevate your brand's influence with our Influencer Marketing and Management services. 
-                    From identifying the perfect influencers to crafting impactful collaborations, 
-                    we amplify your brand's reach and credibility in the digital landscape.
-                  </p>
-  
-                </div>
-              </li>
-  
-              <li>
-                <div class="service-card">
-  
-                  <div class="card-icon" style="background-color: #6610f2">
-                    <ion-icon name="desktop"></ion-icon>
-                  </div>
-  
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Market Research and Consumer Insights</a>
-                  </h3>
-  
-                  <p class="card-text">
-                    Navigate market dynamics with precision through our Market Research and Consumer Insights services. 
-                    We uncover valuable data, providing you with strategic insights to make informed decisions and stay ahead 
-                    in an ever-evolving business landscape.
-                  </p>
-  
-                </div>
-              </li>
-  
-              <li>
-                <div class="service-card">
-  
-                  <div class="card-icon" style="background-color: #ffb700">
-                    <ion-icon name="bulb"></ion-icon>
-                  </div>
-  
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Marketing Automation and Lead Generation</a>
-                  </h3>
-  
-                  <p class="card-text">
-                    Empower your marketing efforts with our Marketing Automation and Lead Generation services. 
-                    Streamline workflows, nurture prospects, 
-                    and drive conversions as we implement cutting-edge automation strategies tailored to fuel your business growth.
-                  </p>
-  
-                </div>
-              </li>
-  
-              <li>
-                <div class="service-card">
-  
-                  <div class="card-icon" style="background-color: #fc3549">
-                    <ion-icon name="phone-portrait"></ion-icon>
-                  </div>
-  
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Pay-Per-Click (PPC) Advertising Campaigns</a>
-                  </h3>
-  
-                  <p class="card-text">
-                    Maximize your online visibility and drive targeted traffic with our Pay-Per-Click (PPC) 
-                    Advertising Campaign services. From strategic keyword selection to compelling ad creatives, 
-                    we optimize every element to ensure your campaigns yield optimal results.
-                  </p>
-  
-                </div>
-              </li>
-  
-              <li>
-                <div class="service-card">
-  
-                  <div class="card-icon" style="background-color: #00d280">
-                    <ion-icon name="archive"></ion-icon>
-                  </div>
-  
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Public Relations and Media Outreach</a>
-                  </h3>
-  
-                  <p class="card-text">
-                    Shape a compelling narrative and build a positive brand image with our Public Relations and 
-                    Media Outreach services. From strategic messaging to media relations, 
-                    we help you create impactful stories that resonate with your audience and enhance your brand reputation.
-                  </p>
-  
-                </div>
-              </li>
-  
-              <li>
-                <div class="service-card">
-  
-                  <div class="card-icon" style="background-color: #ff612f">
-                    <ion-icon name="build"></ion-icon>
-                  </div>
-  
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Search Engine Optimization (SEO) and Search Engine Marketing (SEM)</a>
-                  </h3>
-  
-                  <p class="card-text">
-                    Boost your online visibility and drive targeted traffic with our Search Engine Optimization (SEO) 
-                    and Search Engine Marketing (SEM) services. We employ strategic optimization techniques and 
-                    data-driven marketing strategies to ensure your brand stands out in the competitive digital landscape.
-                  </p>
-  
-                </div>
-              </li>
-              <li>
-                <div class="service-card">
-  
-                  <div class="card-icon" style="background-color: #13c4a1">
-                    <ion-icon name="chatbox"></ion-icon>
-                  </div>
-  
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Social Media Marketing and Management</a>
-                  </h3>
-  
-                  <p class="card-text">
-                    Fuel your brand's social presence with our Social Media Marketing and Management services. 
-                    From engaging content creation to strategic campaign management, we ensure your brand captivates audiences 
-                    across diverse social platforms, fostering meaningful connections and driving business growth.
-                  </p>
-  
-                </div>
-              </li>
-  
-              <li>
-                <div class="service-card">
-  
-                  <div class="card-icon" style="background-color: #6610f2">
-                    <ion-icon name="desktop"></ion-icon>
-                  </div>
-  
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Video Marketing and Production</a>
-                  </h3>
-  
-                  <p class="card-text">
-                    Bring your brand to life with our Video Marketing and Production services. From concept to creation, 
-                    we craft compelling visual stories that resonate with your audience, 
-                    driving engagement and leaving a lasting impression across digital platforms.
-                  </p>
-  
-                </div>
-              </li>
-              <li>
-                <div class="service-card">
-  
-                  <div class="card-icon" style="background-color: #ffb700">
-                    <ion-icon name="bulb"></ion-icon>
-                  </div>
-  
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Website Design and Development</a>
-                  </h3>
-  
-                  <p class="card-text">
-                    Elevate your online presence with our Website Design and Development services. 
-                    We blend creativity and functionality to craft visually stunning and user-friendly websites, 
-                    ensuring a seamless digital experience that reflects the essence of your brand.
-                  </p>
-  
-                </div>
-              </li>
+                <a href="#" class="service-card-link">
+                    <div class="service-card">
+                        <div class="card-icon" style="background-color: #00F3F7">
+                            <ion-icon name="desktop"></ion-icon>
+                        </div>
+                        <h3 class="h3">
+                            <span class="card-title">Video Marketing and Production</span>
+                        </h3>
+                        <p class="card-text">
+                            Bring your brand to life with our Video Marketing and Production services. From concept to creation, 
+                            we craft compelling visual stories that resonate with your audience, 
+                            driving engagement and leaving a lasting impression across digital platforms.
+                        </p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="service-card-link">
+                    <div class="service-card">
+                        <div class="card-icon" style="background-color: #00F3F7">
+                            <ion-icon name="bulb"></ion-icon>
+                        </div>
+                        <h3 class="h3">
+                            <span class="card-title">Website Design and Development</span>
+                        </h3>
+                        <p class="card-text">
+                            Elevate your online presence with our Website Design and Development services. 
+                            We blend creativity and functionality to craft visually stunning and user-friendly websites, 
+                            ensuring a seamless digital experience that reflects the essence of your brand.
+                        </p>
+                    </div>
+                </a>
+            </li>
 
           </ul>
 

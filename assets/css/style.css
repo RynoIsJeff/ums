@@ -377,7 +377,14 @@ body {
 
 .service .section-text { margin-block: 5px 35px; }
 
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px; /* Adjust the gap as needed */
+}
+
 .service-card {
+  flex: 1;
   background-color: var(--white-1);
   padding: 20px 15px;
   border: 1px solid var(--platinum);
@@ -385,9 +392,27 @@ body {
   text-align: center;
   box-shadow: var(--shadow-1);
   transition: var(--transition-2);
+  overflow: hidden;
 }
 
-.service-card:is(:hover, :focus-within) { transform: translateY(-10px); }
+.service-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.service-card-link:hover .card-title {
+  color: var(--turquoise);
+}
+
+.service-card-link:hover .service-card {
+  transform: translateY(-10px);
+}
+
+.service-card .card-title { margin-block: 0; color: var(--blue); }
+
+.service-card .card-text { font-size: var(--fs-6); color: var(--black); }
 
 .service-card .card-icon {
   color: var(--white-1);
@@ -396,11 +421,16 @@ body {
   margin-inline: auto;
   padding: 18px;
   border-radius: 50%;
+  background-color: var(--blue); /* Set the background color for the icons */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px; /* Adjust the margin as needed */
 }
 
-.service-card .card-title { margin-block: 20px 8px; color: var(--blue); }
-
-.service-card .card-text { font-size: var(--fs-6); color: var(--black); }
+.service-card .card-icon ion-icon {
+  color: var(--white-1);
+}
 
 
 
