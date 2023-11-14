@@ -2,14 +2,6 @@
   #style.css
 \*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -968,12 +960,6 @@ textarea.input-field {
 
 
 
-  /**
-   * PROJECT
-   */
-
-  .project-card .card-subtitle { --fs-6: 1.5rem; }
-
 
 
   /**
@@ -990,30 +976,6 @@ textarea.input-field {
   .about-banner { margin-block-end: 0; }
 
 
-
-  /**
-   * BLOG
-   */
-
-  .blog .grid-list {
-    grid-template-columns: 1fr 1fr;
-    row-gap: 20px;
-  }
-
-  .blog .grid-list > li:first-child {
-    grid-column: 1 / 2;
-    grid-row: 1 / 5;
-  }
-
-  .blog-card:not(.grid) { height: 100%; }
-
-  .blog-card .card-content { padding-block: 10px; }
-
-  .blog-card:not(.grid) .card-content { padding: 25px; }
-
-  .blog-card.grid .h3 { --fs-3: 2rem; }
-
-  .blog-card .time { --fs-6: 1.6rem; }
 
 
 
@@ -1081,14 +1043,6 @@ textarea.input-field {
 
 
 
-  /**
-   * PROJECT
-   */
-
-  .project-card .card-content { padding: 30px; }
-
-  .project-card .card-subtitle { --fs-6: 1.6rem; }
-
 
 
   /**
@@ -1110,14 +1064,6 @@ textarea.input-field {
   .cta .section-title { margin-block: 15px 24px; }
 
 
-
-  /**
-   * BLOG
-   */
-
-  .blog-card .time { --fs-6: 1.6rem; }
-
-  .blog-card.grid .h3 { --fs-3: 2.4rem; }
 
 
 
