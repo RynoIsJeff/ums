@@ -213,6 +213,13 @@ body {
 
 .section-text { font-size: var(--fs-6); color: var(--white-1); }
 
+.section-heading {
+  text-align: center;
+  font-size: var(--fs-6);
+  color: var(--white-1);
+  font-weight: bold; /* Add this line to make the text bold */
+}
+
 .grid-list {
   display: grid;
   gap: 30px;
