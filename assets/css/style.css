@@ -470,6 +470,19 @@ body {
   border-radius: var(--radius-5);
   overflow: hidden;
   margin-block-end: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#aboutVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  
 }
 
 .play-btn {
@@ -486,8 +499,12 @@ body {
 }
 
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 1px var(--white-1); }
-  100% { box-shadow: 0 0 0 25px transparent; }
+  0% {
+    box-shadow: 0 0 0 1px var(--white-1);
+  }
+  100% {
+    box-shadow: 0 0 0 25px transparent;
+  }
 }
 
 .about :is(.section-title, .section-text) { text-align: left; }
