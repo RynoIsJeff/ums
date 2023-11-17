@@ -387,6 +387,21 @@ body {
   }
 }
 
+.social-icons {
+  display: flex;
+  gap: 10px; /* Adjust the gap as needed */
+}
+
+.social-icons a {
+  display: inline-block;
+  color: var(--turquoise); /* Set the default color */
+  transition: color 0.3s ease; /* Add a smooth transition for the color change */
+}
+
+.social-icons a:hover {
+  color: var(--white-1); /* Change color on hover */
+}
+
 
 
 
