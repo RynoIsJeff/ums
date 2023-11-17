@@ -549,6 +549,7 @@ body {
   padding: 100px;
 }
 
+
 .cta::after {
   content: "";
   position: absolute;
@@ -570,10 +571,13 @@ body {
   text-align: center;
 }
 
+.spacer {
+  height: 20px; /* Adjust the height to create space after the button */
+}
+
 .cta .section-title { margin-block: 12px 18px; }
 
 .cta .btn { margin-inline: auto; }
-
 
 
 
